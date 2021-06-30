@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  background-color: blue;
+}
+
+.main {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 500px);
+  top: 60px;
+  position: relative;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 100px;
+  min-height: 60%;
+  color: white;
+  border: 0.5px;
+  box-shadow: rebeccapurple;
+}
+.innermain1 {
+  grid-column: 1/3;
+  background-color: rgb(108, 70, 145);
+}
+
+.submain1 {
+  padding: 20px;
+}
+.submain {
+  padding: 20px;
+}
+
+.innermain2 {
+  background-color: rgb(108, 70, 145);
+}
+.text11 {
+  color: tomato;
+}
+.innermain3 {
+  background-color: rgb(108, 70, 145);
+}
+.innermain4 {
+  background-color: rgb(108, 70, 145);
+  padding: 20px;
+}
+.innermain5 {
+  background-color: rgb(108, 70, 145);
+}
+.innermain6 {
+  background-color: rgb(108, 70, 145);
+}
+.innermain7 {
+  background-color: rgb(108, 70, 145);
+}
+.innermain8 {
+  background-color: rgb(108, 70, 145);
+}
+.innermain9 {
+  background-color: rgb(108, 70, 145);
+}
+.innermain10 {
+  grid-column: 3/5;
+  background: rgb(108, 70, 145);
+}
+.img1 {
+  width: 100%;
+  height: 50%;
+}
+h6 {
+  font-weight: lighter;
+}
+.para1 {
+  font-weight: lighter;
+}
+.iconsss {
+  margin-top: 23px;
+  font-weight: 100;
+}
+.navigationbar {
+  background: blueviolet;
+  height: 44px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: cornsilk;
+}
+.leftside {
+  display: flex;
+  flex-basis: 70%;
+  justify-content: flex-start;
+}
+.rightside {
+  display: flex;
+  flex-basis: 70%;
+  justify-content: flex-end;
+}
+.first {
+  background-color: skyblue;
+  height: 40px;
+  padding: 10px 15px;
+}
+.second {
+  background-color: rgb(21, 31, 175);
+  height: 40px;
+  padding: 10px 15px;
+}
+.btn {
+  color: white;
+  background-color: blueviolet;
+  height: 8%;
+  width: 48%;
+  border: 0.3px solid blue;
+  box-shadow: 0.1px;
+}
+/*--------------*/
+@media screen and (max-width: 1024px) {
+  .main {
+    height: 50%;
+    font-size: smaller;
+  grid-template-rows: repeat(3, 1024px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 70%;
+    height: 60%;
+    font-size: smaller;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 768px);
+
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main {
+    display:flex;
+    flex-direction: column;
+    font-size: xx-small;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .btn {
+    height: 20%;
+    width: 100%;
+  }
+  .navigationbar {
+    font-size: 14px;
+  }
+}
